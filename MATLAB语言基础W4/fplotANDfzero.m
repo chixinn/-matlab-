@@ -1,0 +1,10 @@
+%非线性函数分析与函数的数值区分
+%符合绘制函数曲线
+%fplot('functionName',[init,end])
+%求函数极值 
+%求函数零点
+%函数的数值积分
+%quad('functionNmae',初值，终值)
+fplot('humps',[0,2]),grid
+z=fzero('humps',1)
+z=quad('humps',1,2)%这个表达式的意思是求（1，2）之间的定积分
